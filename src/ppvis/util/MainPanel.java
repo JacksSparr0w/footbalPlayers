@@ -30,17 +30,21 @@ public class MainPanel {
     MainPanel(JFrame parent){
         this.parent = parent;
         logic = new ViewInfoPerPage();
+
         panel = new JPanel();
         JTableModel model = new JTableModel(logic.getInfoOnScreen());
         JTable table = new JTable(model);
         scroll = new JScrollPane(table);
         numberOfPlayerOnScreen = new JComboBox<>();
         showPages = new JLabel();
+
         panelForButtons = new JPanel();
         firstPage = new JButton("FIRST PAGE");
         previousPage = new JButton("PREVIOUS PAGE");
         nextPage = new JButton("NEXT PAGE");
         lastPage = new JButton("LAST PAGE");
+
+        panelForEditButtons = new JPanel();
         addBtn = new JButton("Add");
         searchBtn = new JButton("Search");
         deleteBtn = new JButton("Delete");
@@ -61,7 +65,8 @@ public class MainPanel {
             }
         });
 
-        panelForButtons.setLayout(new FlowLayout());
+        panelForButtons.setLayout(new GridLayout(2, 4));
+
         firstPage.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -94,6 +99,7 @@ public class MainPanel {
             }
         });
 
+        //panelForEditButtons.setLayout(new FlowLayout());
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -114,11 +120,16 @@ public class MainPanel {
         panel.add(showPages);
         panel.add(numberOfPlayerOnScreen);
         panel.add(panelForButtons);
+        //panel.add(panelForEditButtons);
+
         panelForButtons.add(firstPage);
         panelForButtons.add(previousPage);
         panelForButtons.add(nextPage);
         panelForButtons.add(lastPage);
+
         panelForButtons.add(addBtn);
+        panelForButtons.add(searchBtn);
+        panelForButtons.add(deleteBtn);
     }
 
     public JPanel getPanel(){

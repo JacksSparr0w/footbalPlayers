@@ -23,19 +23,21 @@ public abstract class Panel {
     Panel(ViewInfoPerPage logic, JFrame parent){
         this.logic = logic;
         this.parent = parent;
-        panel = new JPanel();
-        name = new JTextField("Name");
-        date = new JTextField("Date");
-        teamName = new JTextField("Team name");
-        city = new JTextField("City");
-        roleInTeam = new JComboBox<>();
 
-        position = new JTextField("Position");
+        panel = new JPanel();
+        name = new JTextField();
+        date = new JTextField();
+        teamName = new JTextField();
+        city = new JTextField();
+        roleInTeam = new JComboBox<>();
+        position = new JTextField();
+
         addBtn = new JButton("Add");
+        exitBtn = new JButton("Exit");
         customize();
     }
     void customize(){
-        panel.setLayout(new FlowLayout());
+        panel.setLayout(new GridLayout(2, 6));
         roleInTeam.addItem(Role.Main);
         roleInTeam.addItem(Role.Reserve);
         roleInTeam.setSelectedItem(Role.Main);
@@ -58,14 +60,17 @@ public abstract class Panel {
     abstract void makeAction(ViewInfoPerPage logic);
 
     void addComponentrsToPanel(){
+        for(int i = 0; i < 6; i++) {
+            panel.add(new JLabel(Player.header[i]));
+        }
         panel.add(name);
         panel.add(date);
         panel.add(teamName);
         panel.add(city);
         panel.add(roleInTeam);
         panel.add(position);
-        panel.add(addBtn);
-        panel.add(exitBtn);
+        //panel.add(addBtn);
+        //panel.add(exitBtn);
     }
 
     JPanel getPanel(){
@@ -76,6 +81,7 @@ public abstract class Panel {
         dialog = new JDialog (parent, "Add new player", true);
         dialog.setDefaultCloseOperation (JDialog.DISPOSE_ON_CLOSE);
         dialog.setContentPane (getPanel());
+        dialog.pack();
         dialog.setLocationRelativeTo (parent);
         dialog.setVisible (true);
     }
