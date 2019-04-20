@@ -28,7 +28,7 @@ public class JTableModel extends AbstractTableModel {
         Player p = info.get(row);
         switch (col){
             case 0:
-                return p.getFullName();
+                return p.getName();
             case 1:
                 return p.getDateOfBirth();
             case 2:

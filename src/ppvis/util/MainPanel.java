@@ -7,12 +7,13 @@ import java.awt.event.ActionListener;
 
 public class MainPanel {
     private JFrame parent;
-    private ViewInfoPerPage logic;
+    private Logic logic;
 
     private JPanel panel;
     private JPanel panelForButtons;
 
     private JScrollPane scroll;
+    private JTableModel model;
     private JComboBox<Integer> numberOfPlayerOnScreen;
     private JLabel showPages;
 
@@ -29,10 +30,10 @@ public class MainPanel {
 
     MainPanel(JFrame parent){
         this.parent = parent;
-        logic = new ViewInfoPerPage();
+        logic = new Logic();
 
         panel = new JPanel();
-        JTableModel model = new JTableModel(logic.getInfoOnScreen());
+        model = new JTableModel(logic.getInfoOnScreen());
         JTable table = new JTable(model);
         scroll = new JScrollPane(table);
         numberOfPlayerOnScreen = new JComboBox<>();
@@ -44,7 +45,6 @@ public class MainPanel {
         nextPage = new JButton("NEXT PAGE");
         lastPage = new JButton("LAST PAGE");
 
-        panelForEditButtons = new JPanel();
         addBtn = new JButton("Add");
         searchBtn = new JButton("Search");
         deleteBtn = new JButton("Delete");
@@ -65,13 +65,15 @@ public class MainPanel {
             }
         });
 
-        panelForButtons.setLayout(new GridLayout(2, 4));
+        panelForButtons.setLayout(new GridLayout(2, 4, 10, 10));
 
         firstPage.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 logic.setFirstPage();
                 updateLabel();
+                model.fireTableDataChanged();
+
             }
         });
 
@@ -80,6 +82,8 @@ public class MainPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 logic.decPage();
                 updateLabel();
+                model.fireTableDataChanged();
+
             }
         });
 
@@ -88,6 +92,8 @@ public class MainPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 logic.incPage();
                 updateLabel();
+                model.fireTableDataChanged();
+
             }
         });
 
@@ -96,15 +102,24 @@ public class MainPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 logic.setLastPage();
                 updateLabel();
+                model.fireTableDataChanged();
+
             }
         });
 
-        //panelForEditButtons.setLayout(new FlowLayout());
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                AddPanel add = new AddPanel(logic, parent);
-                add.display();
+                new AddPanel(logic, parent);
+                model.fireTableDataChanged();
+
+            }
+        });
+
+        searchBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                model.fireTableDataChanged();
             }
         });
 
@@ -120,8 +135,6 @@ public class MainPanel {
         panel.add(showPages);
         panel.add(numberOfPlayerOnScreen);
         panel.add(panelForButtons);
-        //panel.add(panelForEditButtons);
-
         panelForButtons.add(firstPage);
         panelForButtons.add(previousPage);
         panelForButtons.add(nextPage);

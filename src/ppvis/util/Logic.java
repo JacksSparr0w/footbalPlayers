@@ -3,7 +3,11 @@ package ppvis.util;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewInfoPerPage {
+public class Logic {
+    public List<Player> getInfo() {
+        return info;
+    }
+
     private List<Player> info;
     private List<Player> infoOnScreen;
     private int countOfPlayerOnScreen;
@@ -11,24 +15,23 @@ public class ViewInfoPerPage {
     private int pages;
 
 
-    ViewInfoPerPage(){
+    Logic(){
         info = new ArrayList<>();
-        //infoOnScreen = new ArrayList<>();
+        infoOnScreen = new ArrayList<>();
         countOfPlayerOnScreen = 3;
         page = 1;
-        updatePages();
-        updateInfoOnScreen();
+        update();
     }
 
     public void addPlayer(Player player){
         info.add(player);
-        updatePages();
+        update();
     }
 
     public void delPlayer(Player player){
         if (info.contains(player))
             info.remove(player);
-        updatePages();
+        update();
     }
 
     private void updatePages(){
@@ -43,21 +46,27 @@ public class ViewInfoPerPage {
         } else {
             finish = info.size();
         }
-        infoOnScreen = info.subList(start, finish);
+        //infoOnScreen = info.subList(start, finish);
+        infoOnScreen.clear();
+        for (int i = start; i < finish; i++)
+            infoOnScreen.add(info.get(i));
+
     }
 
     //For XML files
     public void setInfo(List<Player> info) {
         this.info = info;
         page = 1;
-        updatePages();
-        updateInfoOnScreen();
-
+        update();
     }
 
     public void setCountOfPlayerOnScreen(int countOfPlayerOnScreen) {
         if (countOfPlayerOnScreen >= 0)
             this.countOfPlayerOnScreen = countOfPlayerOnScreen;
+        update();
+    }
+
+    private void update(){
         updatePages();
         updateInfoOnScreen();
     }

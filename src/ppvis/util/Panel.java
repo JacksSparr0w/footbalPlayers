@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public abstract class Panel {
     protected JDialog dialog;
     protected JFrame parent;
-    protected ViewInfoPerPage logic;
+    protected Logic logic;
     protected JPanel panel;
     protected JTextField name;
     protected JTextField date;   //TODO: make date not text
@@ -20,24 +20,24 @@ public abstract class Panel {
     protected JButton exitBtn;
 
 
-    Panel(ViewInfoPerPage logic, JFrame parent){
+    Panel(Logic logic, JFrame parent){
         this.logic = logic;
         this.parent = parent;
 
         panel = new JPanel();
-        name = new JTextField();
-        date = new JTextField();
-        teamName = new JTextField();
-        city = new JTextField();
+        name = new JTextField("q w e");
+        date = new JTextField("123");
+        teamName = new JTextField("team");
+        city = new JTextField("moscow");
         roleInTeam = new JComboBox<>();
-        position = new JTextField();
+        position = new JTextField("2");
 
         addBtn = new JButton("Add");
         exitBtn = new JButton("Exit");
         customize();
     }
     void customize(){
-        panel.setLayout(new GridLayout(2, 6));
+        panel.setLayout(new GridLayout(3, 6, 10, 10));
         roleInTeam.addItem(Role.Main);
         roleInTeam.addItem(Role.Reserve);
         roleInTeam.setSelectedItem(Role.Main);
@@ -50,16 +50,16 @@ public abstract class Panel {
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                dialog.dispose();
             }
         });
 
-        addComponentrsToPanel();
+        addComponentsToPanel();
     }
 
-    abstract void makeAction(ViewInfoPerPage logic);
+    abstract void makeAction(Logic logic);
 
-    void addComponentrsToPanel(){
+    void addComponentsToPanel(){
         for(int i = 0; i < 6; i++) {
             panel.add(new JLabel(Player.header[i]));
         }
@@ -69,8 +69,12 @@ public abstract class Panel {
         panel.add(city);
         panel.add(roleInTeam);
         panel.add(position);
-        //panel.add(addBtn);
-        //panel.add(exitBtn);
+        panel.add(new JLabel());
+        panel.add(new JLabel());
+        panel.add(addBtn);
+        panel.add(exitBtn);
+
+        display ();
     }
 
     JPanel getPanel(){

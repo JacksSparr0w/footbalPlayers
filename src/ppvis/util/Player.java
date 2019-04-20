@@ -4,10 +4,7 @@ import java.util.Objects;
 
 public class Player {
 
-    private String firstName;
-    private String secondName;
-    private String lastName;
-
+    private Name name;
     private String dateOfBirth;
     private String teamName;
     private String city;
@@ -19,10 +16,8 @@ public class Player {
     public static int getCountOfFields(){
         return 6;
     }
-    public Player(String name[], String dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
-        firstName = name[0];
-        secondName = name[1];
-        lastName = name[2];
+    public Player(String name, String dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
+        this.name = new Name(name);
         this.dateOfBirth = dateOfBirth;
         this.teamName = teamName;
         this.city = city;
@@ -30,16 +25,9 @@ public class Player {
         this.position = position;
      }
 
-    public String getFirstName() {
-        return firstName;
-    }
 
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName(){
+        return name.getName();
     }
 
     public String getDateOfBirth() {
@@ -62,19 +50,13 @@ public class Player {
         return position;
     }
 
-    public String getFullName(){
-        return firstName + " " + secondName + " " + lastName;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Player player = (Player) o;
         return position == player.position &&
-                firstName.equals(player.firstName) &&
-                secondName.equals(player.secondName) &&
-                lastName.equals(player.lastName) &&
+                name.equals(player.name) &&
                 dateOfBirth.equals(player.dateOfBirth) &&
                 Objects.equals(teamName, player.teamName) &&
                 Objects.equals(city, player.city) &&
@@ -83,6 +65,6 @@ public class Player {
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, secondName, lastName, dateOfBirth, teamName, city, roleInTeam, position);
+        return Objects.hash(name, dateOfBirth, teamName, city, roleInTeam, position);
     }
 }
