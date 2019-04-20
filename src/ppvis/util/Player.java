@@ -1,11 +1,12 @@
 package ppvis.util;
 
+import java.util.Date;
 import java.util.Objects;
 
 public class Player {
 
     private Name name;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String teamName;
     private String city;
     private Role roleInTeam;
@@ -16,7 +17,7 @@ public class Player {
     public static int getCountOfFields(){
         return 6;
     }
-    public Player(String name, String dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
+    public Player(String name, Date dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
         this.name = new Name(name);
         this.dateOfBirth = dateOfBirth;
         this.teamName = teamName;
@@ -30,7 +31,7 @@ public class Player {
         return name.getName();
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 

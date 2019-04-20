@@ -11,6 +11,7 @@ public abstract class Panel {
     protected Logic logic;
     protected JPanel panel;
     protected JTextField name;
+    protected DatePicker datePicker;
     protected JTextField date;   //TODO: make date not text
     protected JTextField teamName;
     protected JTextField city;
@@ -26,6 +27,7 @@ public abstract class Panel {
 
         panel = new JPanel();
         name = new JTextField("q w e");
+        datePicker = new DatePicker();
         date = new JTextField("123");
         teamName = new JTextField("team");
         city = new JTextField("moscow");
@@ -36,11 +38,11 @@ public abstract class Panel {
         exitBtn = new JButton("Exit");
         customize();
     }
+
     void customize(){
         panel.setLayout(new GridLayout(3, 6, 10, 10));
         roleInTeam.addItem(Role.Main);
         roleInTeam.addItem(Role.Reserve);
-        roleInTeam.setSelectedItem(Role.Main);
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -64,7 +66,8 @@ public abstract class Panel {
             panel.add(new JLabel(Player.header[i]));
         }
         panel.add(name);
-        panel.add(date);
+        panel.add(datePicker.getDatePicker());
+        //panel.add(date);
         panel.add(teamName);
         panel.add(city);
         panel.add(roleInTeam);

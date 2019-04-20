@@ -18,8 +18,9 @@ public class Logic {
     Logic(){
         info = new ArrayList<>();
         infoOnScreen = new ArrayList<>();
-        countOfPlayerOnScreen = 3;
+        countOfPlayerOnScreen = 2;
         page = 1;
+        pages = 1;
         update();
     }
 
@@ -35,18 +36,24 @@ public class Logic {
     }
 
     private void updatePages(){
-        pages = info.size() / countOfPlayerOnScreen;
+        int temp = info.size() / countOfPlayerOnScreen;
+        if (info.size() % countOfPlayerOnScreen == 0)
+            pages = temp;
+        else
+            pages = ++temp;
+
+        if (pages == 0)
+            pages++;
     }
 
     private void updateInfoOnScreen(){
         int start = (page - 1)*countOfPlayerOnScreen;
-        int finish = 0;
+        int finish;
         if (info.size() >= page*countOfPlayerOnScreen){
             finish = page*countOfPlayerOnScreen;
         } else {
             finish = info.size();
         }
-        //infoOnScreen = info.subList(start, finish);
         infoOnScreen.clear();
         for (int i = start; i < finish; i++)
             infoOnScreen.add(info.get(i));
@@ -63,7 +70,9 @@ public class Logic {
     public void setCountOfPlayerOnScreen(int countOfPlayerOnScreen) {
         if (countOfPlayerOnScreen >= 0)
             this.countOfPlayerOnScreen = countOfPlayerOnScreen;
+        setFirstPage();
         update();
+
     }
 
     private void update(){

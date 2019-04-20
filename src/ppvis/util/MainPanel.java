@@ -62,6 +62,7 @@ public class MainPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 logic.setCountOfPlayerOnScreen((Integer) numberOfPlayerOnScreen.getSelectedItem());
                 updateLabel();
+                model.fireTableDataChanged();
             }
         });
 

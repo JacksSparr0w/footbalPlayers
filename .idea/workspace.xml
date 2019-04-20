@@ -2,28 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbd3e4ca-024f-48c7-8379-525edaa5cc67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ppvis/util/Name.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ppvis/util/DateLabelFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ppvis/util/DatePicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/AddPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/AddPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/JTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/JTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPViS2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PPViS2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Logic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Logic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Panel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/ViewInfoPerPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/JTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/JTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/Logic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/MainPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/Panel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/ViewInfoPerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/Logic.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,28 +36,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/run/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#109#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/Logic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="216">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#128#129#0" expanded="true" />
                 <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
                 <element signature="e#1985#1986#0" expanded="true" />
                 <element signature="e#2020#2021#0" expanded="true" />
                 <element signature="e#2065#2066#0" expanded="true" />
@@ -76,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="414">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,9 +72,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="396">
+              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1156#1157#0" expanded="true" />
                 <element signature="e#1183#1184#0" expanded="true" />
                 <element signature="e#1164#1165#0" expanded="true" />
@@ -113,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/Name.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="180">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#288#289#0" expanded="true" />
@@ -135,11 +120,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/JTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
                 <element signature="e#382#383#0" expanded="true" />
                 <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,10 +137,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/AddPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="216">
+              <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="696">
+              <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1399#1400#0" expanded="true" />
@@ -176,10 +166,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/DatePicker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/DateLabelFormatter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="887">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="1152">
+              <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3507#3508#0" expanded="true" />
@@ -235,23 +251,25 @@
         <option value="$PROJECT_DIR$/src/java/by/util/AddPanel.java" />
         <option value="$PROJECT_DIR$/src/java/by/util/App.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/ViewInfoPerPage.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/App.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/Player.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Name.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/JTableModel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/Panel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/Logic.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/JTableModel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/Logic.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/App.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/DataLabelFormatter.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/Panel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/Player.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/DatePicker.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="63" />
-    <option name="y" value="24" />
-    <option name="width" value="929" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="420" />
+    <option name="y" value="-4" />
+    <option name="width" value="931" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -302,10 +320,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/hospital-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/jdatepicker-1.3.4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
@@ -381,25 +402,25 @@
       <workItem from="1555356617050" duration="6086000" />
       <workItem from="1555446265296" duration="1478000" />
       <workItem from="1555517943757" duration="15933000" />
-      <workItem from="1555683205000" duration="9733000" />
+      <workItem from="1555683205000" duration="17637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37508000" />
+    <option name="totallyTimeSpent" value="45412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="24" width="929" height="1056" extended-state="4" />
+    <frame x="62" y="-4" width="1859" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.46424517" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33144155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30495688" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29571578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31034482" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,7 +428,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32810867" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3275862" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.31870428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,13 +454,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ppvis/util/Logic.java</url>
-          <line>51</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ppvis/util/Logic.java</url>
-          <line>26</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -499,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/run/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -519,10 +530,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/Name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="180">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#288#289#0" expanded="true" />
@@ -539,11 +560,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/JTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3507#3508#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="396">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1156#1157#0" expanded="true" />
             <element signature="e#1183#1184#0" expanded="true" />
             <element signature="e#1164#1165#0" expanded="true" />
@@ -562,32 +611,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/Logic.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/AddPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="216">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2193#2194#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="696">
+          <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1399#1400#0" expanded="true" />
@@ -600,38 +638,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/AddPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/Logic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/JTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/MainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="887">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="216">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3507#3508#0" expanded="true" />
-            <element signature="e#3567#3568#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2109#2110#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2164#2165#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/DateLabelFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/DatePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PPViS2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jdatepicker-1.3.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

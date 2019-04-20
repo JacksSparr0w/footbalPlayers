@@ -21,7 +21,6 @@ public class App {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         container.add(mainPanel.getPanel());
         frame.pack();
-        //frame.setSize(new Dimension(450, 450));
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
