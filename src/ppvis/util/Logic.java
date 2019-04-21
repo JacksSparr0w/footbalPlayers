@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Logic {
-    public List<Player> getInfo() {
-        return info;
-    }
 
     private List<Player> info;
     private List<Player> infoOnScreen;

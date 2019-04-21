@@ -12,6 +12,7 @@ public class MainPanel {
     private JPanel panel;
     private JPanel panelForButtons;
 
+    private Menu menu;
     private JScrollPane scroll;
     private JTableModel model;
     private JComboBox<Integer> numberOfPlayerOnScreen;
@@ -33,7 +34,8 @@ public class MainPanel {
         logic = new Logic();
 
         panel = new JPanel();
-        model = new JTableModel(logic.getInfoOnScreen());
+        menu = new Menu(logic);
+        model = new JTableModel(logic);
         JTable table = new JTable(model);
         scroll = new JScrollPane(table);
         numberOfPlayerOnScreen = new JComboBox<>();
@@ -48,10 +50,10 @@ public class MainPanel {
         addBtn = new JButton("Add");
         searchBtn = new JButton("Search");
         deleteBtn = new JButton("Delete");
-        customize();
+        tuneUp();
     }
 
-    private void customize(){
+    private void tuneUp(){
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         updateLabel();
         for (int x : numbers) {
@@ -111,7 +113,8 @@ public class MainPanel {
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new AddPanel(logic, parent);
+                AddDialog addDialog = new AddDialog(logic, parent);
+                addDialog.display();
                 model.fireTableDataChanged();
 
             }
@@ -128,19 +131,21 @@ public class MainPanel {
     }
 
     private void updateLabel(){
-        showPages.setText("Now " + logic.getPage() + " of " + logic.getPages());
+        showPages.setText("Now at" + logic.getPage() + " of " + logic.getPages() + " pages");
     }
 
     private void addComponentsToPanels(){
+        parent.setJMenuBar(menu.getJMenuBar());
+
         panel.add(scroll);
         panel.add(showPages);
         panel.add(numberOfPlayerOnScreen);
         panel.add(panelForButtons);
+
         panelForButtons.add(firstPage);
         panelForButtons.add(previousPage);
         panelForButtons.add(nextPage);
         panelForButtons.add(lastPage);
-
         panelForButtons.add(addBtn);
         panelForButtons.add(searchBtn);
         panelForButtons.add(deleteBtn);

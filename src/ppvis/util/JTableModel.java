@@ -5,8 +5,8 @@ import javax.swing.table.AbstractTableModel;
 public class JTableModel extends AbstractTableModel {
     private java.util.List<Player> info;
 
-    JTableModel(java.util.List<Player> info){
-        this.info = info;
+    JTableModel(Logic logic){
+        this.info = logic.getInfoOnScreen();
     }
 
     @Override

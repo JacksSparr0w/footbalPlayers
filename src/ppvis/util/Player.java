@@ -1,5 +1,6 @@
 package ppvis.util;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
@@ -31,8 +32,9 @@ public class Player {
         return name.getName();
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public String getDateOfBirth() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(dateOfBirth);
     }
 
     public String getTeamName() {

@@ -7,6 +7,7 @@ public class App {
     private JFrame frame;
     private Container container;
     private MainPanel mainPanel;
+    private Menu menu;
 
      public App(){
         frame = new JFrame();

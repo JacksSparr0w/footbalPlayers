@@ -28,7 +28,7 @@ public class DatePicker {
     }
 
     public Date getDate(){
-        return datePicker.getModel().get
+        return (Date) datePicker.getModel().getValue();
 
     }
 
