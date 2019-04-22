@@ -115,6 +115,7 @@ public class MainPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 AddDialog addDialog = new AddDialog(logic, parent);
                 addDialog.display();
+                updateLabel();
                 model.fireTableDataChanged();
 
             }
@@ -131,7 +132,7 @@ public class MainPanel {
     }
 
     private void updateLabel(){
-        showPages.setText("Now at" + logic.getPage() + " of " + logic.getPages() + " pages");
+        showPages.setText("Now at " + logic.getPage() + " of " + logic.getPages() + " pages");
     }
 
     private void addComponentsToPanels(){

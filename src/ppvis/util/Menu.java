@@ -3,6 +3,7 @@ package ppvis.util;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class Menu {
     private Logic logic;
@@ -28,14 +29,14 @@ public class Menu {
         open.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                //XMLAdapter.open(logic);
+                XMLAdapter.open(logic, getChosenFile("Открыть файл"));
             }
         });
 
         save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                //XMLAdapter.save(logic);
+                XMLAdapter.save(logic.getInfo(), getChosenFile("Сохранить файл"));
 
             }
         });
@@ -54,6 +55,15 @@ public class Menu {
         menuBar.add(menu);
     }
 
+    private File getChosenFile(String att){
+        JFileChooser fileopen = new JFileChooser();
+        int ret = fileopen.showDialog(null, att);
+        if (ret == JFileChooser.APPROVE_OPTION) {
+            File file = fileopen.getSelectedFile();
+            return file;
+        }
+        return null;
+    }
     public JMenuBar getJMenuBar(){
         return menuBar;
     }

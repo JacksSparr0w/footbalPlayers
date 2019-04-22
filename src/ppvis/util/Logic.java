@@ -99,6 +99,10 @@ public class Logic {
         updateInfoOnScreen();
     }
 
+    public List<Player> getInfo() {
+        return info;
+    }
+
     public List<Player> getInfoOnScreen() {
         return infoOnScreen;
     }
