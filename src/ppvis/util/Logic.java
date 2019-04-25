@@ -1,5 +1,6 @@
 package ppvis.util;
 
+import ppvis.util.search.SearchBy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +42,15 @@ public class Logic {
 
         if (pages == 0)
             pages++;
+    }
+
+    public List<Player> searchByTag(SearchBy searchBy, Object object){
+        List<Player> buf = new ArrayList<>();
+        for (Player p : info) {
+            if (searchBy.compare(p, object))
+                buf.add(p);
+        }
+        return buf;
     }
 
     private void updateInfoOnScreen(){

@@ -14,7 +14,7 @@ public class Menu {
     private JMenuItem save;
     private JMenuItem exit;
 
-    Menu(Logic logic){
+    Menu(Logic logic, JTableModel model){
         this.logic = logic;
         menuBar = new JMenuBar();
         menu = new JMenu("Menu");
@@ -22,14 +22,15 @@ public class Menu {
         save = new JMenuItem("Save");
         exit = new JMenuItem("Exit");
 
-        tuneUp();
+        tuneUp(model);
     }
 
-    private void tuneUp(){
+    private void tuneUp(JTableModel model){
         open.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 XMLAdapter.open(logic, getChosenFile("Открыть файл"));
+                model.fireTableDataChanged();
             }
         });
 
@@ -57,7 +58,8 @@ public class Menu {
 
     private File getChosenFile(String att){
         JFileChooser fileopen = new JFileChooser();
-        int ret = fileopen.showDialog(null, att);
+        int ret = fileopen.showDialog(null, att
+        );
         if (ret == JFileChooser.APPROVE_OPTION) {
             File file = fileopen.getSelectedFile();
             return file;
