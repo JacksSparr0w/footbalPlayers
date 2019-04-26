@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class AddDialog {
+public class AddPanel {
 
-    private Dialog inputFields;
+    AddPanel(Service logic, Table table){
+        JFrame frame = new JFrame();
 
-    AddDialog(Logic logic, JFrame parent, Table table){
-        inputFields = new Dialog(parent);
+        InputFieldsPanel inputFields = new InputFieldsPanel();
         inputFields.getActionBtn().setText("Add new player");
         inputFields.getActionBtn().addActionListener(new ActionListener() {
             @Override
@@ -22,10 +22,16 @@ public class AddDialog {
             }
         });
 
-        inputFields.display();
+        inputFields.getExitBtn().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                frame.dispose();
+            }
+        });
+
+        frame.getContentPane().add(inputFields.getPanel());
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
-
-
-
-
 }

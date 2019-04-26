@@ -4,7 +4,7 @@ import ppvis.util.search.SearchBy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Logic {
+public class Service {
 
     private List<Player> info;
     private List<Player> infoOnScreen;
@@ -13,7 +13,7 @@ public class Logic {
     private int pages;
 
 
-    Logic(){
+    Service(){
         info = new ArrayList<>();
         infoOnScreen = new ArrayList<>();
         countOfPlayerOnScreen = 2;
@@ -27,7 +27,12 @@ public class Logic {
         update();
     }
 
-    public void delPlayer(Player player){
+    public void delPlayers(List<Player> players){
+        for (Player player : players)
+            delPlayer(player);
+    }
+
+    private void delPlayer(Player player){
         if (info.contains(player))
             info.remove(player);
         update();

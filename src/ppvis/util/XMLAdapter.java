@@ -82,7 +82,7 @@ public class XMLAdapter {
         }
     }
 
-    public static void open(Logic logic, File file){
+    public static void open(Service logic, File file){
 
         final String fileName = file.getPath();
 

@@ -5,7 +5,7 @@ import javax.swing.table.AbstractTableModel;
 public class JTableModel extends AbstractTableModel {
     private java.util.List<Player> info;
 
-    JTableModel(Logic logic){
+    JTableModel(Service logic){
         this.info = logic.getInfoOnScreen();
     }
 

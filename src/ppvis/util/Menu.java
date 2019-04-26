@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class Menu {
-    private Logic logic;
+    private Service logic;
 
     private JMenuBar menuBar;
     private JMenu menu;
@@ -14,7 +14,7 @@ public class Menu {
     private JMenuItem save;
     private JMenuItem exit;
 
-    Menu(Logic logic, JTableModel model){
+    Menu(Service logic, JTableModel model){
         this.logic = logic;
         menuBar = new JMenuBar();
         menu = new JMenu("Menu");

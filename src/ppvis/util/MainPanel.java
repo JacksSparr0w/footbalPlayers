@@ -1,31 +1,31 @@
 package ppvis.util;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MainPanel {
-    private JFrame parent;
-    private Logic logic;
+    private JFrame frame;
+    private Container container;
+    private Service logic;
 
     private JPanel panel;
     private JPanel panelForButtons;
-
-    private Menu menu;
 
     private Table table;
     private JButton addBtn;
     private JButton searchBtn;
     private JButton deleteBtn;
 
-    MainPanel(JFrame parent){
-        this.parent = parent;
-        logic = new Logic();
+    public MainPanel(){
+        frame = new JFrame();
+        container = frame.getContentPane();
+
+        logic = new Service();
 
         panel = new JPanel();
-
         table = new Table(logic);
-        menu = new Menu(logic, table.getModel());
         panelForButtons = new JPanel();
 
         addBtn = new JButton("Add");
@@ -36,13 +36,13 @@ public class MainPanel {
     }
 
     private void tuneUp(){
+        frame.setJMenuBar(new Menu(logic, table.getModel()).getJMenuBar());
 
         addBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new AddDialog(logic, parent, table);
+                new AddPanel(logic, table);
                 table.getModel().fireTableDataChanged();
-                //addDialog.display();
                 table.updateCounter();
 
             }
@@ -51,24 +51,22 @@ public class MainPanel {
         searchBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                //searchDialog
+                new SearchPanel(logic);
+                //table.getModel().fireTableDataChanged();
+                //table.updateCounter();
             }
         });
-
-        addComponentsToPanels();
-    }
-
-    private void addComponentsToPanels(){
-        parent.setJMenuBar(menu.getJMenuBar());
 
         panel.add(table.getPanel());
         panel.add(panelForButtons);
         panelForButtons.add(addBtn);
         panelForButtons.add(searchBtn);
         panelForButtons.add(deleteBtn);
+
+        container.add(panel);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 
-    public JPanel getPanel(){
-        return panel;
-    }
 }

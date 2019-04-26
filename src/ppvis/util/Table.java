@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Table {
-    private Logic logic;
+    private Service logic;
 
     private JPanel panel;
     private JScrollPane scroll;
@@ -22,7 +22,7 @@ public class Table {
     private JLabel counter;
     private JComboBox<Integer> numberOfPlayerOnScreen;
 
-    Table(Logic logic){
+    Table(Service logic){
         this.logic = logic;
         panel = new JPanel();
 
@@ -114,7 +114,6 @@ public class Table {
     }
 
     private void addComponentsToPanels(){
-
         panel.add(scroll);
         panel.add(counter);
         panel.add(numberOfPlayerOnScreen);
@@ -124,7 +123,6 @@ public class Table {
         panelForButtons.add(previousPage);
         panelForButtons.add(nextPage);
         panelForButtons.add(lastPage);
-
     }
 
     public JTableModel getModel() {

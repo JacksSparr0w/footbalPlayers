@@ -2,16 +2,9 @@ package ppvis.util;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Date;
 
-public class Dialog {
-    private JDialog dialog;
-    private JFrame parent;
-    //private Logic logic;
-
-    //private Table table;
+public class InputFieldsPanel {
     private JPanel panel;
 
     private JTextField name;
@@ -25,11 +18,7 @@ public class Dialog {
     private JButton exitBtn;
 
 
-    Dialog(JFrame parent){
-        //this.logic = logic;
-        this.parent = parent;
-        //this.table = table;
-
+    InputFieldsPanel(){
         panel = new JPanel();
         name = new JTextField("q w e");
         datePicker = new DatePicker();
@@ -47,13 +36,6 @@ public class Dialog {
         roleInTeam.addItem(Role.Main);
         roleInTeam.addItem(Role.Reserve);
 
-        exitBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                dialog.dispose();
-            }
-        });
-
         addComponentsToPanel();
     }
 
@@ -66,21 +48,6 @@ public class Dialog {
 
         panel.add(actionBtn);
         panel.add(exitBtn);
-
-        //display();
-
-    }
-
-
-
-    public void display (){
-        dialog = new JDialog (parent, "Add new player", true);
-        dialog.setDefaultCloseOperation (JDialog.DISPOSE_ON_CLOSE);
-        dialog.setContentPane (getPanel());
-        dialog.pack();
-        //dialog.setSize(new Dimension(400, 250));
-        dialog.setLocationRelativeTo (parent);
-        dialog.setVisible (true);
     }
 
     public JPanel getPanel(){
@@ -113,6 +80,10 @@ public class Dialog {
 
     public JButton getActionBtn() {
         return actionBtn;
+    }
+
+    public JButton getExitBtn() {
+        return exitBtn;
     }
 }
 
