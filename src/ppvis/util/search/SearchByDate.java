@@ -2,12 +2,11 @@ package ppvis.util.search;
 
 import ppvis.util.Player;
 
-import java.util.Date;
+import java.text.ParseException;
 
 public class SearchByDate implements SearchBy {
     @Override
-    public boolean compare(Player player, Object object) {
-        Date date = (Date) object;
-        return player.getDateOfBirth().equals(date);
+    public boolean compare(Player player, Object object) throws ParseException {
+        return true;
     }
 }

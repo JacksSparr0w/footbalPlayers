@@ -4,6 +4,7 @@ import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
 
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Properties;
 
@@ -13,7 +14,7 @@ public class DatePicker {
 
     DatePicker(){
         UtilDateModel model = new UtilDateModel();
-        model.setDate(1990, 8, 24);
+        //model.setDate(new Date());
         model.setSelected(true);
         Properties p = new Properties();
         p.put("text.today", "Today");
@@ -27,9 +28,14 @@ public class DatePicker {
         return datePicker;
     }
 
-    public Date getDate(){
+    public Date getDate() throws ParseException {
+        validate();
         return (Date) datePicker.getModel().getValue();
+    }
 
+    private void validate() throws ParseException {
+        if (datePicker.getModel().getValue() == null)
+            datePicker.getModel().setDate(1000, 1, 1);
     }
 
 }

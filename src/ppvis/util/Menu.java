@@ -29,8 +29,11 @@ public class Menu {
         open.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                XMLAdapter.open(logic, getChosenFile("Открыть файл"));
-                model.fireTableDataChanged();
+                File file = getChosenFile("Открыть файл");
+                if (file != null) {
+                    XMLAdapter.open(logic, file);
+                    model.fireTableDataChanged();
+                }
             }
         });
 

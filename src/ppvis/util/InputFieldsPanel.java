@@ -2,6 +2,7 @@ package ppvis.util;
 
 import javax.swing.*;
 import java.awt.*;
+import java.text.ParseException;
 import java.util.Date;
 
 public class InputFieldsPanel {
@@ -20,12 +21,12 @@ public class InputFieldsPanel {
 
     InputFieldsPanel(){
         panel = new JPanel();
-        name = new JTextField("q w e");
+        name = new JTextField();
         datePicker = new DatePicker();
-        teamName = new JTextField("team");
-        city = new JTextField("moscow");
+        teamName = new JTextField();
+        city = new JTextField();
         roleInTeam = new JComboBox<>();
-        position = new JTextField("2");
+        position = new JTextField();
         actionBtn = new JButton();
         exitBtn = new JButton("Exit");
         tuneUp();
@@ -42,12 +43,16 @@ public class InputFieldsPanel {
     private void addComponentsToPanel(){
         Component[] temp = {name, datePicker.getDatePicker(), teamName, city, roleInTeam, position};
         for(int i = 0; i < 6; i++) {
-            panel.add(new JLabel(Player.header[i]));
+            panel.add(new JLabel(Constants.header[i]));
             panel.add(temp[i]);
         }
 
         panel.add(actionBtn);
         panel.add(exitBtn);
+    }
+
+    public void addRole(Role role){
+        roleInTeam.addItem(role);
     }
 
     public JPanel getPanel(){
@@ -58,7 +63,7 @@ public class InputFieldsPanel {
         return name.getText();
     }
 
-    public Date getDate() {
+    public Date getDate() throws ParseException {
         return datePicker.getDate();
     }
 
@@ -74,8 +79,8 @@ public class InputFieldsPanel {
         return (Role) roleInTeam.getSelectedItem();
     }
 
-    public int getPosition() {
-        return Integer.parseInt(position.getText());
+    public String getPosition() {
+        return position.getText();
     }
 
     public JButton getActionBtn() {

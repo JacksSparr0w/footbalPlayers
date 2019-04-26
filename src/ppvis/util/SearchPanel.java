@@ -3,24 +3,36 @@ package ppvis.util;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 public class SearchPanel {
     private Table table;
-    private Service service;
+    private Service localService;
 
-    SearchPanel(Service logic){
+    SearchPanel(Service mainService){
         JFrame frame = new JFrame();
-        service = new Service();
-        table = new Table(service);
+        localService = new Service();
+        table = new Table(localService);
 
         InputFieldsPanel inputFields = new InputFieldsPanel();
+        inputFields.addRole(Role.NoMatter);
         inputFields.getActionBtn().setText("Search players");
         inputFields.getActionBtn().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                /*Player p = new Player(inputFields.getName(), inputFields.getDate(), inputFields.getTeamName(),
-                        inputFields.getCity(), inputFields.getRoleInTeam(), inputFields.getPosition());
-                logic.addPlayer(p);*/
+                PlayerDTO playerDTO;
+                try {
+                    playerDTO = new PlayerDTO(inputFields.getName(),
+                            inputFields.getDate(),
+                            inputFields.getTeamName(),
+                            inputFields.getCity(),
+                            inputFields.getRoleInTeam(),
+                            inputFields.getPosition());
+
+                    localService.setInfo(mainService.search(playerDTO));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
                 table.getModel().fireTableDataChanged();
                 table.updateCounter();
             }

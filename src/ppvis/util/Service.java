@@ -1,6 +1,8 @@
 package ppvis.util;
 
-import ppvis.util.search.SearchBy;
+import ppvis.util.search.*;
+
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +29,10 @@ public class Service {
         update();
     }
 
+    public void addPlayer(PlayerDTO playerDto) throws ParseException {
+        addPlayer(new Player(playerDto));
+    }
+
     public void delPlayers(List<Player> players){
         for (Player player : players)
             delPlayer(player);
@@ -49,11 +55,20 @@ public class Service {
             pages++;
     }
 
-    public List<Player> searchByTag(SearchBy searchBy, Object object){
+    public List<Player> search(Object object) throws ParseException {
+        SearchBy searchers[] = new SearchBy[]{new SearchByName(), new SearchByDate(),
+                new SearchByTeamName(), new SearchByCity(), new SearchByRole(), new SearchByPosition() };
         List<Player> buf = new ArrayList<>();
-        for (Player p : info) {
-            if (searchBy.compare(p, object))
-                buf.add(p);
+
+        for(Player player : info){
+            if (searchers[0].compare(player, object) &&
+                    searchers[1].compare(player, object) &&
+                    searchers[2].compare(player, object) &&
+                    searchers[3].compare(player, object) &&
+                    searchers[4].compare(player, object) &&
+                    searchers[5].compare(player, object))
+
+                buf.add(player);
         }
         return buf;
     }

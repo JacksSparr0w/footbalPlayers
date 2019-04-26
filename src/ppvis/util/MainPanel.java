@@ -44,7 +44,6 @@ public class MainPanel {
                 new AddPanel(logic, table);
                 table.getModel().fireTableDataChanged();
                 table.updateCounter();
-
             }
         });
 
@@ -52,8 +51,13 @@ public class MainPanel {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 new SearchPanel(logic);
-                //table.getModel().fireTableDataChanged();
-                //table.updateCounter();
+            }
+        });
+
+        deleteBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                new DeletePanel(logic, table);
             }
         });
 

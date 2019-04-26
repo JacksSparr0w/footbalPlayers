@@ -11,7 +11,7 @@ public class JTableModel extends AbstractTableModel {
 
     @Override
     public String getColumnName(int col){
-        return Player.header[col];
+        return Constants.header[col];
     }
     @Override
     public int getRowCount() {
@@ -20,7 +20,7 @@ public class JTableModel extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return Player.getCountOfFields();
+        return Constants.COUNT_OF_FIELDS;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class JTableModel extends AbstractTableModel {
             case 0:
                 return p.getName();
             case 1:
-                return p.getDateOfBirth();
+                return p.getDateOfBirthBeautiful();
             case 2:
                 return p.getTeamName();
             case 3:

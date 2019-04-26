@@ -3,6 +3,7 @@ package ppvis.util;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 public class AddPanel {
 
@@ -14,8 +15,13 @@ public class AddPanel {
         inputFields.getActionBtn().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Player p = new Player(inputFields.getName(), inputFields.getDate(), inputFields.getTeamName(),
-                        inputFields.getCity(), inputFields.getRoleInTeam(), inputFields.getPosition());
+                Player p = null;
+                try {
+                    p = new Player(inputFields.getName(), inputFields.getDate(), inputFields.getTeamName(),
+                            inputFields.getCity(), inputFields.getRoleInTeam(), inputFields.getPosition());
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
                 logic.addPlayer(p);
                 table.getModel().fireTableDataChanged();
                 table.updateCounter();

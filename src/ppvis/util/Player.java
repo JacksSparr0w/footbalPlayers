@@ -1,6 +1,5 @@
 package ppvis.util;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
@@ -13,18 +12,31 @@ public class Player {
     private Role roleInTeam;
     private int position;
 
-    public static final String header[] = new String[]{"Name", "Date", "Team name", "City", "Role", "Position"};
+    public Player(Name name, Date dateOfBirth, String teamName, String city, String roleInTeam, int i){
 
-    public static int getCountOfFields(){
-        return 6;
     }
-    public Player(String name, Date dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
-        this.name = new Name(name);
+
+    public Player(Name name, Date dateOfBirth, String teamName, String city, Role roleInTeam, int position) {
+        this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.teamName = teamName;
         this.city = city;
         this.roleInTeam = roleInTeam;
-        this.position = position;
+        setPosition(position);
+     }
+
+     public Player(String name, Date dateOfBirth, String teamName, String city, Role roleInTeam, String position){
+        this(new Name(name), dateOfBirth, teamName, city, roleInTeam,
+                position.equalsIgnoreCase("") ? 0 : Integer.parseInt(position));
+     }
+
+     public Player(PlayerDTO playerDto) {
+        this(playerDto.getName(),
+                playerDto.getDateOfBirth(),
+                playerDto.getTeamName(),
+                playerDto.getCity(),
+                playerDto.getRoleInTeam(),
+                playerDto.getPosition());
      }
 
 
@@ -32,9 +44,12 @@ public class Player {
         return name.getName();
     }
 
-    public String getDateOfBirth() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        return sdf.format(dateOfBirth);
+    public String getDateOfBirthBeautiful() {
+        return Constants.sdf.format(dateOfBirth);
+    }
+
+    public Date getDateOfBirth(){
+        return dateOfBirth;
     }
 
     public String getTeamName() {
@@ -51,6 +66,12 @@ public class Player {
 
     public int getPosition() {
         return position;
+    }
+
+    public void setPosition(int position) {
+        if (position > 0)
+            this.position = position;
+        else this.position = 0;
     }
 
     @Override

@@ -3,6 +3,7 @@ package ppvis.util;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 
 public class DeletePanel {
 
@@ -10,13 +11,24 @@ public class DeletePanel {
         JFrame frame = new JFrame();
 
         InputFieldsPanel inputFields = new InputFieldsPanel();
-        inputFields.getActionBtn().setText("Add new player");
+        inputFields.addRole(Role.NoMatter);
+        inputFields.getActionBtn().setText("Delete player");
         inputFields.getActionBtn().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                /*Player p = new Player(inputFields.getName(), inputFields.getDate(), inputFields.getTeamName(),
-                        inputFields.getCity(), inputFields.getRoleInTeam(), inputFields.getPosition());
-                logic.addPlayer(p);*/
+                PlayerDTO playerDTO;
+                try {
+                    playerDTO = new PlayerDTO(inputFields.getName(),
+                            inputFields.getDate(),
+                            inputFields.getTeamName(),
+                            inputFields.getCity(),
+                            inputFields.getRoleInTeam(),
+                            inputFields.getPosition());
+
+                    logic.delPlayers(logic.search(playerDTO));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
                 table.getModel().fireTableDataChanged();
                 table.updateCounter();
             }

@@ -15,7 +15,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -41,7 +40,7 @@ public class XMLAdapter {
                 player.setAttributeNode(attr);
 
                 attr = document.createAttribute("date");
-                attr.setValue(p.getDateOfBirth());
+                attr.setValue(p.getDateOfBirthBeautiful());
                 player.setAttributeNode(attr);
 
                 attr = document.createAttribute("teamName");
@@ -95,7 +94,7 @@ public class XMLAdapter {
                 List<Player> info;
                 Player p;
 
-                String name;
+                Name name;
                 Date date;
                 String teamName;
                 String city;
@@ -112,8 +111,8 @@ public class XMLAdapter {
                     if (qName.equals("Player")){
 
                         try {
-                            name = atts.getValue("name");
-                            date = new SimpleDateFormat("yyyy-MM-dd").parse(atts.getValue("date"));
+                            name = new Name(atts.getValue("name"));
+                            date = Constants.sdf.parse(atts.getValue("date"));
                             teamName = atts.getValue("teamName");
                             city = atts.getValue("city");
                             roleInTeam = atts.getValue("roleInTeam").equalsIgnoreCase("Main") ? Role.Main : Role.Reserve;
