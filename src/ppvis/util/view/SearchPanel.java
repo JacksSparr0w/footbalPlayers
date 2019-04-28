@@ -5,6 +5,7 @@ import ppvis.util.model.PlayerDTO;
 import ppvis.util.model.Role;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.ParseException;
@@ -26,7 +27,7 @@ public class SearchPanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 PlayerDTO playerDTO;
                 try {
-                    playerDTO = new PlayerDTO(inputFields.getName(),
+                    playerDTO = new PlayerDTO(inputFields.getFirstName(),
                             inputFields.getDate(),
                             inputFields.getTeamName(),
                             inputFields.getCity(),
@@ -34,7 +35,6 @@ public class SearchPanel {
                             inputFields.getPosition());
 
                     searchPlayersDAO.setInfo(playersDAO.search(playerDTO));
-                    //localService.setInfo(mainService.search(playerDTO));
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -54,7 +54,7 @@ public class SearchPanel {
         panel.add(table.getPanel());
 
         frame.getContentPane().add(panel);
-        frame.pack();
+        frame.setSize(new Dimension(500, 900));
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }

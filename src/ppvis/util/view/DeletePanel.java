@@ -24,7 +24,7 @@ public class DeletePanel {
             public void actionPerformed(ActionEvent actionEvent) {
                 PlayerDTO playerDTO;
                 try {
-                    playerDTO = new PlayerDTO(inputFields.getName(),
+                    playerDTO = new PlayerDTO(inputFields.getFirstName(),
                             inputFields.getDate(),
                             inputFields.getTeamName(),
                             inputFields.getCity(),
@@ -34,6 +34,7 @@ public class DeletePanel {
                     List<Player> find = playersDAO.search(playerDTO);
                     showDialog(find.size());
                     playersDAO.delPlayers(find);
+                    mainPanel.update();
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }

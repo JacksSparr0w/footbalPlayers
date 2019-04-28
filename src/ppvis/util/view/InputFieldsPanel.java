@@ -1,7 +1,6 @@
 package ppvis.util.view;
 
 import ppvis.util.model.Role;
-import ppvis.util.model.Constants;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +10,10 @@ import java.util.Date;
 public class InputFieldsPanel {
     private JPanel panel;
 
-    private JTextField name;
+    private JTextField firstName;
+    private JTextField secondName;
+    private JTextField lastName
+            ;
     private DatePicker datePicker;
     private JTextField teamName;
     private JTextField city;
@@ -24,7 +26,9 @@ public class InputFieldsPanel {
 
     InputFieldsPanel(){
         panel = new JPanel();
-        name = new JTextField();
+        firstName = new JTextField();
+        secondName = new JTextField();
+        lastName = new JTextField();
         datePicker = new DatePicker();
         teamName = new JTextField();
         city = new JTextField();
@@ -36,7 +40,7 @@ public class InputFieldsPanel {
     }
 
     private void tuneUp(){
-        panel.setLayout(new GridLayout(7, 2, 15, 15));
+        panel.setLayout(new GridLayout(9, 2, 15, 15));
         roleInTeam.addItem(Role.Main);
         roleInTeam.addItem(Role.Reserve);
 
@@ -44,53 +48,62 @@ public class InputFieldsPanel {
     }
 
     private void addComponentsToPanel(){
-        Component[] temp = {name, datePicker.getDatePicker(), teamName, city, roleInTeam, position};
-        for(int i = 0; i < Constants.COUNT_OF_FIELDS; i++) {
-            panel.add(new JLabel(Constants.header[i]));
-            panel.add(temp[i]);
+        String header[] = new String[]{"First name", "Second name", "Last Name", "Date", "Team name", "City", "Role", "Position"};
+        Component[] components = {firstName, secondName, lastName, datePicker.getDatePicker(), teamName, city, roleInTeam, position};
+        for(int i = 0; i < header.length; i++) {
+            panel.add(new JLabel(header[i]));
+            panel.add(components[i]);
         }
 
         panel.add(actionBtn);
         panel.add(exitBtn);
     }
 
-    public void addRole(Role role){
+    void addRole(Role role){
         roleInTeam.addItem(role);
     }
 
-    public JPanel getPanel(){
+    JPanel getPanel(){
         return panel;
     }
 
-    public String getName() {
-        return name.getText().trim();
+    String getFirstName() {
+        return firstName.getText().trim();
     }
 
-    public Date getDate() throws ParseException {
+    String getSecondName() {
+        return secondName.getText().trim();
+    }
+
+    String getLastName() {
+        return lastName.getText().trim();
+    }
+
+    Date getDate() throws ParseException {
         return datePicker.getDate();
     }
 
-    public String getTeamName() {
+    String getTeamName() {
         return teamName.getText().trim();
     }
 
-    public String getCity() {
+    String getCity() {
         return city.getText().trim();
     }
 
-    public Role getRoleInTeam() {
+    Role getRoleInTeam() {
         return (Role) roleInTeam.getSelectedItem();
     }
 
-    public String getPosition() {
+    String getPosition() {
         return position.getText().trim();
     }
 
-    public JButton getActionBtn() {
+    JButton getActionBtn() {
         return actionBtn;
     }
 
-    public JButton getExitBtn() {
+    JButton getExitBtn() {
         return exitBtn;
     }
 }

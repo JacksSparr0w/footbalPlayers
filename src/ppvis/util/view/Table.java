@@ -12,7 +12,7 @@ public class Table {
 
     private PlayersDAO playersOnScreen;
     private int countOfPlayersOnScreen;
-    private int currentPage;
+    private int currentPage = 1;
     private int pages;
 
 
@@ -34,7 +34,7 @@ public class Table {
         playersOnScreen = new PlayersDAO();
         panel = new JPanel();
 
-        model = new JTableModel(playersDAO.getPlayers());
+        model = new JTableModel(playersOnScreen.getPlayers());
         JTable table = new JTable(model);
         scroll = new JScrollPane(table);
         numberOfPlayerOnScreen = new JComboBox<>();
@@ -49,14 +49,12 @@ public class Table {
 
         counter = new JLabel();
 
+
         tuneUp();
     }
 
     private void tuneUp(){
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.setBorder(BorderFactory.createMatteBorder(
-                1, 1, 1, 1, Color.black));
-        panel.setBounds(15,15, 15, 15);
 
         int[] numbers = {2, 5, 10, 15, 25};
         for (int x : numbers) {
@@ -68,6 +66,7 @@ public class Table {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 countOfPlayersOnScreen = (int) numberOfPlayerOnScreen.getSelectedItem();
+                currentPage = 1;
                 update();
             }
         });
@@ -123,7 +122,7 @@ public class Table {
         updatePages();
         updateInfoOnScreen();
         model.fireTableDataChanged();
-        counter.setText("In common: " + playersDAO.getSize() + " \t\tNow at " +
+        counter.setText("In common: " + playersDAO.getSize() + ".\t\t\t Now at " +
                 currentPage + " of " + pages + " pages");
     }
 

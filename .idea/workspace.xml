@@ -2,78 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbd3e4ca-024f-48c7-8379-525edaa5cc67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ppvis/test/Parse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ppvis/util/view/ViewPlayersPerPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/run/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/run/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/AddPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/AddPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/AddPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/DateLabelFormatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/DatePicker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/DeletePanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/DeletePanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/DeletePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/InputFieldsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/JTableModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/MainPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Menu$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Menu$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Menu$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/PlayerDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/SearchPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/SearchPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/SearchPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/XMLAdapter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/XMLAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchBy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchBy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByCity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByCity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByPosition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByTeamName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/search/SearchByTeamName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/run/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/run/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/DateLabelFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/controller/DateLabelFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/DatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/InputFieldsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/JTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/PlayerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/PlayerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/controller/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/XMLAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/test/Parse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/test/Parse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/PlayersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/PlayersDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/XMLAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/XMLAdapter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/XMLAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/controller/XMLAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Name.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/AddPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/DeletePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/DeletePanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/InputFieldsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/InputFieldsPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/JTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/JTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/MainPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/MainPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/SearchPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PPViS2/ppvis/util/view/ViewPlayersPerPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/test/Parse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/test/Parse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/model/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/model/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ppvis/util/search/SearchByTeamName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/search/SearchByTeamName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ppvis/util/view/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ppvis/util/view/Table.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,55 +60,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Table.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="121" column="18" lean-forward="true" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+            <state relative-caret-position="365">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2574#2575#0" expanded="true" />
-                <element signature="e#2735#2736#0" expanded="true" />
-                <element signature="e#2776#2777#0" expanded="true" />
-                <element signature="e#2935#2936#0" expanded="true" />
-                <element signature="e#2979#2980#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1647#1648#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/ViewPlayersPerPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/Service.java">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Name.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -143,17 +98,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="331">
+              <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Menu.java">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/test/Parse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="558">
+              <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,11 +131,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="180">
+              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -196,18 +196,23 @@
       <find>private</find>
       <find>protected</find>
       <find>page</find>
-      <find>page</find>
-      <find>public</find>
       <find>logic</find>
+      <find>date</find>
+      <find>public</find>
+      <find />
+      <find>/</find>
     </findStrings>
     <replaceStrings>
-      <replace>date</replace>
       <replace>roleInTeam</replace>
       <replace>position</replace>
       <replace>protected</replace>
       <replace>currentPage</replace>
-      <replace>private</replace>
       <replace>playersDAO</replace>
+      <replace>date</replace>
+      <replace>dateOfBirth</replace>
+      <replace>private</replace>
+      <replace>/</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -216,8 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/searchByRole.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/searchByPosition.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/search/searchByName.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/App.java" />
         <option value="$PROJECT_DIR$/src/ppvis/run/Runner.java" />
@@ -230,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/ppvis/util/DeleteDialog.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Role.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByRole.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByTeamName.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/PlayerDTO.java" />
@@ -240,41 +242,44 @@
         <option value="$PROJECT_DIR$/src/ppvis/util/XMLAdapter.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Service.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Menu.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/DatePicker.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/AddPanel.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByPosition.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/SearchPanel.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/DeletePanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/test/Parse.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/Name.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/InputFieldsPanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/model/Player.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/view/DatePicker.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/model/PlayerDTO.java" />
         <option value="$USER_HOME$/2.xml" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/controller/Service.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/view/ViewPlayersPerPage.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java" />
-        <option value="$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/view/Menu.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java" />
         <option value="$PROJECT_DIR$/src/ppvis/util/view/Table.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/model/Name.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/test/Parse.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/model/Constants.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java" />
+        <option value="$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="61" />
-    <option name="y" value="-32" />
-    <option name="width" value="1861" />
-    <option name="height" value="1114" />
+    <option name="x" value="62" />
+    <option name="y" value="-4" />
+    <option name="width" value="1859" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -282,6 +287,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,6 +378,13 @@
               <item name="PPViS2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="ppvis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="PPViS2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="PPViS2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ppvis" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="util" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -410,7 +423,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,8 +450,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner (1)">
-    <configuration name="Parse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CreateDoc" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ppvis.test.Parse" />
       <module name="PPViS2" />
       <extension name="coverage">
@@ -452,20 +464,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturningDialogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.by.test.ReturningDialogTest" />
-      <module name="PPViS2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java.by.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ppvis.run.Runner" />
       <module name="PPViS2" />
       <extension name="coverage">
@@ -478,25 +477,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.by.run.Runner" />
-      <module name="PPViS2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java.by.run.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.CreateDoc" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Runner (1)" />
-        <item itemvalue="Application.Parse" />
-        <item itemvalue="Application.Runner" />
-        <item itemvalue="Application.ReturningDialogTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CreateDoc" />
       </list>
     </recent_temporary>
   </component>
@@ -526,25 +514,27 @@
       <workItem from="1556279517574" duration="5730000" />
       <workItem from="1556306767779" duration="14587000" />
       <workItem from="1556347782907" duration="8315000" />
-      <workItem from="1556400452392" duration="1249000" />
+      <workItem from="1556400452392" duration="3832000" />
+      <workItem from="1556464417191" duration="416000" />
+      <workItem from="1556477685994" duration="12237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111545000" />
+    <option name="totallyTimeSpent" value="126781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="-11" width="1859" height="1092" extended-state="6" />
+    <frame x="62" y="-4" width="1859" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2136941" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21811154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32810867" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3814002" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3814002" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42946708" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,23 +587,16 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java</url>
-          <line>46</line>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/by/util/View.java" />
     <entry file="file://$PROJECT_DIR$/src/java/by/util/AddDialog.java" />
     <entry file="file://$PROJECT_DIR$/src/java/by/test/ReturningDialogTest.java" />
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Integer.class">
@@ -627,13 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="879" selection-start-line="879" selection-end-line="879" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/text/SimpleDateFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -730,9 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/run/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -740,26 +713,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/test/Parse.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model.java" />
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view.java" />
+    <entry file="file://$USER_HOME$/2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model.java" />
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view.java" />
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Name.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/Service.java" />
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/ViewPlayersPerPage.java" />
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/text/SimpleDateFormat.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="608" selection-start-line="608" selection-end-line="608" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/AbstractButton.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="1567" selection-start-line="1567" selection-end-line="1567" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#53189#53190#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,33 +748,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/2.xml">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/DateLabelFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="79">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/DatePicker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="36">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -807,25 +770,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/InputFieldsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="468">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/PlayerDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -834,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByPosition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,40 +818,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByCity.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchBy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="53" />
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/DateLabelFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="491">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -904,28 +850,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/AddPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="e#1311#1312#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="234">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/PlayerDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="198">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -934,57 +896,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/SearchPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="576">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/ViewPlayersPerPage.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Name.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="306">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/Service.java">
+    <entry file="file://$PROJECT_DIR$/out.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/PlayersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/controller/XMLAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="180">
+          <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/test/Parse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="558">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/model/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/JTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/search/SearchByDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -993,23 +969,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="331">
+          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/Table.java">
+    <entry file="file://$PROJECT_DIR$/src/ppvis/util/view/DeletePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="121" column="18" lean-forward="true" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+        <state relative-caret-position="378">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2574#2575#0" expanded="true" />
-            <element signature="e#2735#2736#0" expanded="true" />
-            <element signature="e#2776#2777#0" expanded="true" />
-            <element signature="e#2935#2936#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
           </folding>
         </state>
       </provider>

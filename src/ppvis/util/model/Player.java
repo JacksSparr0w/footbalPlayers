@@ -40,8 +40,8 @@ public class Player {
      }
 
 
-    public String getName(){
-        return name.getName();
+    public Name getName(){
+        return name;
     }
 
     public String getDateOfBirthBeautiful() {

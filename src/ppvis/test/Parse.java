@@ -20,7 +20,7 @@ public class Parse {
         Random random = new Random();
 
         String[] names = new String[]{"Killian Mballe", "Harry kein", "Neimar", "Rahim Sterling", "Mohammed Ali",
-        "Romely Rokaky Aby", "Paulo Dibala", "Philippe  Cuoto", "Pol Pogba"};
+        "Romely Rokaky Aby", "Paulo Dibala", "Philippe Cuoto", "Pol Pogba"};
         String[] teamNames = new String[]{"Barselona", "Liverpool", "Mnachester", "Juventus",
         "Bayern", "Atletico", "Paris Saint-Germain", "Tottenham", "Real Madrid", "FC"};
         String[] citis = new String[]{"Paris", "Barselona", "London", "Moscow", "Minsk", "Berlin",
@@ -45,8 +45,8 @@ public class Parse {
                 attr.setValue(names[random.nextInt(names.length)]);
                 player.setAttributeNode(attr);
 
-                attr = document.createAttribute("date");
-                String s = Integer.toString(random.nextInt(2010)) + "-" +Integer.toString(random.nextInt(12)) + "-" +
+                attr = document.createAttribute("dateOfBirth");
+                String s = Integer.toString(random.nextInt(79) + 1920) + "-" +Integer.toString(random.nextInt(12)) + "-" +
                         Integer.toString(random.nextInt(28));
                 attr.setValue(s);
                 player.setAttributeNode(attr);

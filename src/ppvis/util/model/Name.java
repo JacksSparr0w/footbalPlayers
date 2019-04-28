@@ -1,68 +1,69 @@
 package ppvis.util.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
 
-public class Name {
-    private List<String> name;
+public class Name implements Comparable<Name>{
+    private String firstName = "";
+    private String secondName = "";
+    private String lastName = "";
 
     public Name(){
-        name = new ArrayList<>();
-    }
-    public Name(String s){
-        this();
-        setName(s);
+
     }
 
-    public String getName(){
-        return toString();
+    public Name(String name){
+        String[] s = name.split(" ");
+        if (s.length  >= 1)
+            firstName = s[0];
+        if (s.length >= 2)
+            secondName = s[1];
+        if (s.length >= 3)
+            lastName = s[2];
     }
 
     public String getFirstName() {
-        return name.size() == 1 ? name.get(0) : "";
+        return firstName;
     }
 
     public String getSecondName() {
-        return name.size() == 2 ? name.get(1) : "";
+        return secondName;
     }
 
     public String getLastName() {
-        return name.size() == 3 ? name.get(2) : "";
+        return lastName;
     }
 
-    public int getCountOfNames(){
-        return name.size();
-    }
-
-    public boolean isContain(String s){
-        return name.contains(s);
-    }
-
-    public void setName(String string){
-        string = string.trim();
-        name.addAll(Arrays.asList(string.split(" ")));
+    public String getFullName(){
+        return firstName + " " + secondName + " " + lastName;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Name name1 = (Name) o;
-        return name.equals(name1.name);
+        Name name = (Name) o;
+        return Objects.equals(firstName, name.firstName) &&
+                Objects.equals(secondName, name.secondName) &&
+                Objects.equals(lastName, name.lastName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name);
+        return Objects.hash(firstName, secondName, lastName);
     }
 
     @Override
-    public String toString() {
-        String rez = new String();
-        for (String s : name)
-            rez = rez.concat(s) + " ";
-        return rez;
+    public int compareTo(Name name) {
+        if (name.getFullName().trim().equals(""))
+            return 0;
+        if (firstName.equalsIgnoreCase(name.getFirstName())){
+            if(secondName.equalsIgnoreCase(name.getSecondName())){
+                if(lastName.equalsIgnoreCase(name.getLastName()))
+                    return 0;
+                return 0;
+            }
+            return 0;
+        }
+        return 1;
     }
 }

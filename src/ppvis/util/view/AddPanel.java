@@ -19,7 +19,8 @@ public class AddPanel {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    Player p = new Player(inputFields.getName(), inputFields.getDate(), inputFields.getTeamName(),
+                    String name = inputFields.getFirstName() + " " + inputFields.getSecondName() + " " + inputFields.getLastName();
+                    Player p = new Player(name, inputFields.getDate(), inputFields.getTeamName(),
                             inputFields.getCity(), inputFields.getRoleInTeam(), inputFields.getPosition());
                     playersDAO.addPlayer(p);
                     mainPanel.update();

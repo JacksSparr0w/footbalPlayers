@@ -70,7 +70,7 @@ public class MainPanel {
         panelForButtons.add(deleteBtn);
 
         container.add(panel);
-        frame.pack();
+        frame.setSize(new Dimension(510, 550));
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }

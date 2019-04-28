@@ -40,10 +40,10 @@ public class XMLAdapter {
                 rootElement.appendChild(player);
 
                 Attr attr = document.createAttribute("name");
-                attr.setValue(p.getName());
+                attr.setValue(p.getName().getFullName());
                 player.setAttributeNode(attr);
 
-                attr = document.createAttribute("date");
+                attr = document.createAttribute("dateOfBirth");
                 attr.setValue(p.getDateOfBirthBeautiful());
                 player.setAttributeNode(attr);
 
@@ -99,7 +99,7 @@ public class XMLAdapter {
                 Player p;
 
                 Name name;
-                Date date;
+                Date dateOfBirth;
                 String teamName;
                 String city;
                 Role roleInTeam;
@@ -115,13 +115,13 @@ public class XMLAdapter {
                     if (qName.equals("Player")){
 
                         try {
-                            name = new Name(atts.getValue("name"));
-                            date = Constants.sdf.parse(atts.getValue("date"));
+                            name = new Name(atts.getValue("name").trim());
+                            dateOfBirth = Constants.sdf.parse(atts.getValue("dateOfBirth"));
                             teamName = atts.getValue("teamName");
                             city = atts.getValue("city");
                             roleInTeam = atts.getValue("roleInTeam").equalsIgnoreCase("Main") ? Role.Main : Role.Reserve;
                             position = Integer.parseInt(atts.getValue("position"));
-                            p = new Player(name, date, teamName, city, roleInTeam, position);
+                            p = new Player(name, dateOfBirth, teamName, city, roleInTeam, position);
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }

@@ -7,11 +7,10 @@ import ppvis.util.model.PlayerDTO;
 public class SearchByName implements SearchBy {
     @Override
     public boolean compare(Player player, Object object) {
-        String s = ((PlayerDTO) object).getName();
-        Name name = new Name(s);
-        if (name.equals(player.getName())) return true;
-        return player.getName().equalsIgnoreCase(s);
-
+        PlayerDTO playerDTO = (PlayerDTO) object;
+        Name playerName = player.getName();
+        return playerName.compareTo(new Name(playerDTO.getName())) == 0;
 
     }
 }
+

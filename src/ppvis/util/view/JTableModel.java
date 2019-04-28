@@ -1,18 +1,18 @@
 package ppvis.util.view;
 
-import ppvis.util.model.Constants;
 import ppvis.util.model.Player;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 
 public class JTableModel extends AbstractTableModel {
-    public static final int COL_NAME = 0;
-    public static final int DATE_OF_BIRTH = 1;
-    public static final int TEAM_NAME = 2;
-    public static final int CITY = 3;
-    public static final int ROLE_IN_TEAM = 4;
-    public static final int POSITION = 5;
+    private String header[] = new String[]{"Name", "Date", "Team name", "City", "Role", "Position"};
+    private static final int COL_NAME = 0;
+    private static final int DATE_OF_BIRTH = 1;
+    private static final int TEAM_NAME = 2;
+    private static final int CITY = 3;
+    private static final int ROLE_IN_TEAM = 4;
+    private static final int POSITION = 5;
 
     private java.util.List<Player> players;
 
@@ -22,7 +22,7 @@ public class JTableModel extends AbstractTableModel {
 
     @Override
     public String getColumnName(int col){
-        return Constants.header[col];
+        return header[col];
     }
     @Override
     public int getRowCount() {
@@ -31,7 +31,7 @@ public class JTableModel extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return Constants.COUNT_OF_FIELDS;
+        return header.length;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class JTableModel extends AbstractTableModel {
         Player p = players.get(row);
         switch (col){
             case COL_NAME:
-                return p.getName();
+                return p.getName().getFullName();
             case DATE_OF_BIRTH:
                 return p.getDateOfBirthBeautiful();
             case TEAM_NAME:
