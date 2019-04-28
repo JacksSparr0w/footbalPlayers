@@ -1,7 +1,7 @@
 package ppvis.util.search;
 
-import ppvis.util.Player;
-import ppvis.util.PlayerDTO;
+import ppvis.util.model.Player;
+import ppvis.util.model.PlayerDTO;
 
 public class SearchByPosition implements SearchBy {
     @Override

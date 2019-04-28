@@ -1,8 +1,8 @@
 package ppvis.util.search;
 
-import ppvis.util.Player;
-import ppvis.util.PlayerDTO;
-import ppvis.util.Role;
+import ppvis.util.model.Player;
+import ppvis.util.model.PlayerDTO;
+import ppvis.util.model.Role;
 
 public class SearchByRole implements SearchBy {
     @Override
